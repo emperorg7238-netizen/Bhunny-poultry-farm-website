@@ -46,8 +46,10 @@ const productSelect = document.getElementById("product");
 
 productOrderButtons.forEach(function (button) {
     button.addEventListener("click", function () {
-        const selectedProduct = button.dataset.product;
+        const selectedProduct = button.getAttribute("data-product");
 
-        productSelect.value = selectedProduct;
+        setTimeout(function () {
+            productSelect.value = selectedProduct;
+        }, 100);
     });
 });
