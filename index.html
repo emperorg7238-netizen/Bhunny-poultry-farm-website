@@ -305,30 +305,170 @@
         </section>
 
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
+        <!-- Order Section -->
 
-            <p class="eyebrow">GET IN TOUCH</p>
+<section id="contact" class="order-section">
 
-            <h2>Ready To Place An Order?</h2>
+    <div class="section-heading">
 
-            <p>
-                Contact us today and let's get your poultry order ready.
-            </p>
+        <p class="eyebrow">PLACE AN ORDER</p>
 
-            <div class="contact-buttons">
+        <h2>Order From Bhunny Poultry Farm</h2>
 
-                <a href="https://wa.me/2340000000000"
-                   class="primary-button">
-                    WhatsApp Us
-                </a>
+        <p>
+            Tell us what you need and we'll get back to you
+            to confirm your order.
+        </p>
 
-                <a href="tel:+2340000000000"
-                   class="secondary-button">
-                    Call Us
-                </a>
+    </div>
 
-            </div>
+
+    <form class="order-form" id="orderForm">
+
+        <div class="form-group">
+
+            <label for="name">Full Name</label>
+
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your full name"
+                required
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="phone">Phone Number</label>
+
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Your phone number"
+                required
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="product">What do you want?</label>
+
+            <select id="product" name="product" required>
+
+                <option value="">
+                    Select a product
+                </option>
+
+                <option value="Live Broilers">
+                    Live Broilers
+                </option>
+
+                <option value="Fresh Eggs">
+                    Fresh Eggs
+                </option>
+
+                <option value="Dressed Chicken">
+                    Dressed Chicken
+                </option>
+
+                <option value="Day-Old Chicks">
+                    Day-Old Chicks
+                </option>
+
+                <option value="Poultry Feed">
+                    Poultry Feed
+                </option>
+
+                <option value="Layers & Breeding Stock">
+                    Layers & Breeding Stock
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="quantity">Quantity</label>
+
+            <input
+                type="number"
+                id="quantity"
+                name="quantity"
+                min="1"
+                placeholder="e.g. 20"
+                required
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="delivery">
+                Pickup or Delivery?
+            </label>
+
+            <select id="delivery" name="delivery" required>
+
+                <option value="">
+                    Select an option
+                </option>
+
+                <option value="Farm Pickup">
+                    Farm Pickup
+                </option>
+
+                <option value="Delivery">
+                    Delivery
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="message">
+                Additional Message
+            </label>
+
+            <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Anything else we should know?"
+            ></textarea>
+
+        </div>
+
+
+        <button type="submit" class="primary-button">
+            Continue With Order
+        </button>
+
+    </form>
+
+</section>
+
+
+<!-- Footer -->
+
+<footer>
+
+    <p>
+        © 2026 Bhunny Poultry Farm. All rights reserved.
+    </p>
+
+</footer>
 
         </section>
 
