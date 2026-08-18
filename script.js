@@ -42,14 +42,20 @@ if (menuToggle && navLinks) {
     });
 }
 const productOrderButtons = document.querySelectorAll(".product-order");
-const productSelect = document.getElementById("product");
 
 productOrderButtons.forEach(function (button) {
     button.addEventListener("click", function () {
         const selectedProduct = button.getAttribute("data-product");
 
-        setTimeout(function () {
-            productSelect.value = selectedProduct;
-        }, 100);
+        window.location.hash = "contact";
+        window.location.search = "?product=" + encodeURIComponent(selectedProduct);
     });
 });
+
+const productSelect = document.getElementById("product");
+const urlParams = new URLSearchParams(window.location.search);
+const selectedProduct = urlParams.get("product");
+
+if (productSelect && selectedProduct) {
+    productSelect.value = selectedProduct;
+}
