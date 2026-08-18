@@ -41,3 +41,13 @@ if (menuToggle && navLinks) {
         navLinks.classList.toggle("active");
     });
 }
+const productOrderButtons = document.querySelectorAll(".product-order");
+const productSelect = document.getElementById("product");
+
+productOrderButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+        const selectedProduct = button.dataset.product;
+
+        productSelect.value = selectedProduct;
+    });
+});
