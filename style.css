@@ -132,18 +132,13 @@ header {
     justify-content: center;
 }
 
-.image-placeholder {
-    width: 420px;
-    height: 420px;
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+    object-fit: cover;
     border-radius: 30px;
-
-    background: #dce8cf;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 150px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -337,11 +332,10 @@ footer {
         justify-content: center;
     }
 
-    .image-placeholder {
-        width: 300px;
-        height: 300px;
-        font-size: 100px;
-    }
+  .hero-image img {
+    width: 300px;
+    height: 300px;
+}
 
     .product-grid {
         grid-template-columns: 1fr;
