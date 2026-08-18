@@ -31,3 +31,9 @@ ${message}`;
 
     window.open(whatsappURL, "_blank");
 });
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click", function () {
+    navLinks.classList.toggle("active");
+});
