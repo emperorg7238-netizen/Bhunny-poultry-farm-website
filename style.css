@@ -371,6 +371,9 @@ footer {
         .product-card {
         padding: 25px;
     }
+    .product-card img {
+    height: 180px;
+}
 
     .about-stats {
         grid-template-columns: 1fr;
