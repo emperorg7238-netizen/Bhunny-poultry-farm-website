@@ -183,9 +183,10 @@ header {
 
     transition: transform 0.3s ease;
 }
-.product-price {
-    font-weight: 600;
-    margin: 12px 0;
+.product-card .product-price {
+    font-weight: 700;
+    margin: 12px 0 20px;
+    color: #315c2b;
 }
 
 .product-card:hover {
