@@ -368,6 +368,9 @@ footer {
         grid-template-columns: 1fr;
         padding: 70px 20px;
     }
+        .product-card {
+        padding: 25px;
+    }
 
     .about-stats {
         grid-template-columns: 1fr;
