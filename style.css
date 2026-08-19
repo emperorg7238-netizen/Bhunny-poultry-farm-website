@@ -217,9 +217,19 @@ header {
 }
 
 .product-card a {
-    color: #315c2b;
+    display: inline-block;
+    background: #315c2b;
+    color: white;
     text-decoration: none;
     font-weight: 700;
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin-top: 5px;
+    transition: background 0.3s ease;
+}
+
+.product-card a:hover {
+    background: #24451f;
 }
 
 
