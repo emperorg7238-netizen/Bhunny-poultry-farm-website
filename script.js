@@ -1,20 +1,24 @@
+// ================================
+// ORDER FORM → WHATSAPP
+// ================================
+
 const orderForm = document.getElementById("orderForm");
 
 if (orderForm) {
     orderForm.addEventListener("submit", function (event) {
         event.preventDefault();
 
-        const name = document.getElementById("name").value;
-        const phone = document.getElementById("phone").value;
+        const name = document.getElementById("name").value.trim();
+        const phone = document.getElementById("phone").value.trim();
         const product = document.getElementById("product").value;
         const quantity = document.getElementById("quantity").value;
         const delivery = document.getElementById("delivery").value;
-        const message = document.getElementById("message").value;
+        const message = document.getElementById("message").value.trim();
 
         const whatsappNumber = "2348134375132";
 
         const orderMessage =
-            `Hello Bhunny Poultry Farm 👋
+`Hello Bhunny Poultry Farm 👋
 
 I would like to place an order.
 
@@ -33,6 +37,12 @@ ${message}`;
         window.open(whatsappURL, "_blank");
     });
 }
+
+
+// ================================
+// MOBILE MENU
+// ================================
+
 const menuToggle = document.getElementById("menuToggle");
 const navLinks = document.querySelector(".nav-links");
 
@@ -41,21 +51,35 @@ if (menuToggle && navLinks) {
         navLinks.classList.toggle("active");
     });
 }
+
+
+// ================================
+// PRODUCT ORDER BUTTONS
+// ================================
+
 const productOrderButtons = document.querySelectorAll(".product-order");
+const productSelect = document.getElementById("product");
+const contactSection = document.getElementById("contact");
 
 productOrderButtons.forEach(function (button) {
+
     button.addEventListener("click", function () {
-        const selectedProduct = button.getAttribute("data-product");
 
-        window.location.hash = "contact";
-        window.location.search = "?product=" + encodeURIComponent(selectedProduct);
+        const selectedProduct =
+            button.getAttribute("data-product");
+
+        // Automatically select the product
+        if (productSelect) {
+            productSelect.value = selectedProduct;
+        }
+
+        // Scroll smoothly to the order form
+        if (contactSection) {
+            contactSection.scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+
     });
+
 });
-
-const productSelect = document.getElementById("product");
-const urlParams = new URLSearchParams(window.location.search);
-const selectedProduct = urlParams.get("product");
-
-if (productSelect && selectedProduct) {
-    productSelect.value = selectedProduct;
-}
