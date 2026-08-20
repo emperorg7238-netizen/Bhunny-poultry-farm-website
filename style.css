@@ -1355,6 +1355,10 @@ footer {
         height: 42px;
     }
 }
+.back-to-top {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
 
 
 
