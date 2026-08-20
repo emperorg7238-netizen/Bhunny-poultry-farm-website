@@ -92,30 +92,28 @@ productOrderButtons.forEach(function (button) {
         }
 
     });
-    // ================================
-// BACK TO TOP BUTTON
+  // ================================
+// BACK TO TOP
 // ================================
 
-const backToTop = document.getElementById("backToTop");
+const backToTopButton = document.getElementById("backToTop");
 
-if (backToTop) {
+window.addEventListener("scroll", function () {
 
-    window.onscroll = function () {
+    if (window.scrollY > 300) {
+        backToTopButton.classList.add("visible");
+    } else {
+        backToTopButton.classList.remove("visible");
+    }
 
-        if (document.documentElement.scrollTop > 300) {
-            backToTop.classList.add("show");
-        } else {
-            backToTop.classList.remove("show");
-        }
+});
 
-    };
+backToTopButton.addEventListener("click", function () {
 
-    backToTop.onclick = function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 
-        document.documentElement.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-
-    };
-}
+});  
+    
