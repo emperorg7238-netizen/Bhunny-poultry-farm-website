@@ -1313,9 +1313,7 @@ footer {
         font-size: 0.9rem;
     }
 }
-/* ================================
-   BACK TO TOP
-================================ */
+/* FINAL BACK TO TOP */
 
 #backToTop {
     display: none;
@@ -1329,24 +1327,11 @@ footer {
     border: none;
     border-radius: 50%;
     background: #182018;
-    color: #ffffff;
-
+    color: white;
     font-size: 24px;
-    font-weight: 700;
     cursor: pointer;
-
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
 }
 
-#backToTop.show {
+#backToTop.visible {
     display: block;
-}
-
-@media (max-width: 600px) {
-    #backToTop {
-        right: 15px;
-        bottom: 75px;
-        width: 42px;
-        height: 42px;
-    }
 }
