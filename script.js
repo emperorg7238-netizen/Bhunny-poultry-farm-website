@@ -100,23 +100,22 @@ const backToTop = document.getElementById("backToTop");
 
 if (backToTop) {
 
-    function updateBackToTop() {
-        if (window.scrollY > 300) {
+    window.onscroll = function () {
+
+        if (document.documentElement.scrollTop > 300) {
             backToTop.classList.add("show");
         } else {
             backToTop.classList.remove("show");
         }
-    }
 
-    window.addEventListener("scroll", updateBackToTop);
+    };
 
-    backToTop.addEventListener("click", function () {
-        window.scrollTo({
+    backToTop.onclick = function () {
+
+        document.documentElement.scrollTo({
             top: 0,
             behavior: "smooth"
         });
-    });
 
-    updateBackToTop();
+    };
 }
-
