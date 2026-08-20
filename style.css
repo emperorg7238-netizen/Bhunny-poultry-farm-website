@@ -905,4 +905,22 @@ footer {
     }
 
 }
+/* Location Button */
+
+.location-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    background: #1f6f43;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.location-button:hover {
+    background: #15522f;
+    transform: translateY(-2px);
+}
 
