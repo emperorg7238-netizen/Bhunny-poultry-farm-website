@@ -66,9 +66,14 @@ if (menuToggle && navLinks) {
 // PRODUCT ORDER BUTTONS
 // ================================
 
-const productOrderButtons = document.querySelectorAll(".product-order");
-const productSelect = document.getElementById("product");
-const contactSection = document.getElementById("order-form");
+const productOrderButtons =
+    document.querySelectorAll(".product-order");
+
+const productSelect =
+    document.getElementById("product");
+
+const contactSection =
+    document.getElementById("order-form");
 
 productOrderButtons.forEach(function (button) {
 
@@ -79,12 +84,10 @@ productOrderButtons.forEach(function (button) {
         const selectedProduct =
             button.getAttribute("data-product");
 
-        // Automatically select the product
         if (productSelect) {
             productSelect.value = selectedProduct;
         }
 
-        // Scroll smoothly to the order form
         if (contactSection) {
             contactSection.scrollIntoView({
                 behavior: "smooth"
@@ -97,25 +100,25 @@ productOrderButtons.forEach(function (button) {
 
 
 // ================================
-// BACK TO TOP
+// BACK TO TOP BUTTON
 // ================================
 
-const backToTopButton =
+const backToTop =
     document.getElementById("backToTop");
 
-if (backToTopButton) {
+if (backToTop) {
 
     window.addEventListener("scroll", function () {
 
         if (window.scrollY > 300) {
-            backToTopButton.classList.add("visible");
+            backToTop.classList.add("visible");
         } else {
-            backToTopButton.classList.remove("visible");
+            backToTop.classList.remove("visible");
         }
 
     });
 
-    backToTopButton.addEventListener("click", function () {
+    backToTop.addEventListener("click", function () {
 
         window.scrollTo({
             top: 0,
