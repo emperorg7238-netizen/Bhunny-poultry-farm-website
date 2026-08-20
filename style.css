@@ -1073,5 +1073,43 @@ footer {
     padding: 4px 10px;
     border-radius: 20px;
 }
+/* ================================
+   SMOOTH INTERACTIONS
+================================ */
+
+.primary-button,
+.secondary-button,
+.nav-button,
+.product-order,
+.location-button {
+    transition:
+        transform 0.2s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.primary-button:hover,
+.secondary-button:hover,
+.nav-button:hover,
+.product-order:hover,
+.location-button:hover {
+    transform: translateY(-2px);
+}
+
+.contact-info-card,
+.step,
+.why-card,
+.product-card {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.contact-info-card:hover,
+.step:hover,
+.why-card:hover,
+.product-card:hover {
+    transform: translateY(-4px);
+}
 
 
