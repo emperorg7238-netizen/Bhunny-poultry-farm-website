@@ -92,9 +92,7 @@ productOrderButtons.forEach(function (button) {
         }
 
     });
-
-});
-// ================================
+    // ================================
 // BACK TO TOP BUTTON
 // ================================
 
@@ -102,59 +100,23 @@ const backToTop = document.getElementById("backToTop");
 
 if (backToTop) {
 
-    window.addEventListener("scroll", function () {
-
-        if (window.scrollY > 500) {
-            backToTop.classList.add("show");
-        } else {
-            backToTop.classList.remove("show");
-        }
-
-    });
-
-    backToTop.addEventListener("click", function () {
-
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-
-    });
-
-}
-// ================================
-// BACK TO TOP BUTTON
-// ================================
-
-document.addEventListener("DOMContentLoaded", function () {
-
-    const backToTop = document.getElementById("backToTop");
-
-    if (!backToTop) {
-        return;
-    }
-
-    function checkScroll() {
-
+    function updateBackToTop() {
         if (window.scrollY > 300) {
             backToTop.classList.add("show");
         } else {
             backToTop.classList.remove("show");
         }
-
     }
 
-    window.addEventListener("scroll", checkScroll);
+    window.addEventListener("scroll", updateBackToTop);
 
     backToTop.addEventListener("click", function () {
-
         window.scrollTo({
             top: 0,
             behavior: "smooth"
         });
-
     });
 
-    checkScroll();
+    updateBackToTop();
+}
 
-});
