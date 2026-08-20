@@ -1160,6 +1160,29 @@ footer {
         font-size: 0.9rem;
     }
 }
+/* Premium Product Cards */
+
+.product-card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(24, 32, 24, 0.12);
+}
+
+.product-order {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.product-order:hover {
+    transform: translateX(4px);
+    opacity: 0.8;
+}
 
 
 
