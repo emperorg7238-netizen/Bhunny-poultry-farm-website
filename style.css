@@ -966,4 +966,77 @@ footer {
 }
 .find-us + .section-heading {
     margin-top: 80px;
+    
 }
+/* ================================
+   MOBILE POLISH
+================================ */
+
+@media (max-width: 768px) {
+
+    /* Prevent the page from feeling cramped */
+    .navbar {
+        padding: 16px 18px;
+    }
+
+    .logo {
+        font-size: 19px;
+    }
+
+    /* Better section spacing */
+    .find-us {
+        margin: 50px 20px 70px;
+        padding: 40px 20px;
+    }
+
+    .find-us + .section-heading {
+        margin-top: 60px;
+    }
+
+    /* Better contact cards */
+    .contact-info-card {
+        padding: 28px 20px;
+    }
+
+    /* Make buttons easier to tap */
+    .location-button,
+    .primary-button,
+    .secondary-button {
+        min-height: 44px;
+    }
+
+    /* Prevent long email addresses from making the page look messy */
+    .contact-info-card a {
+        overflow-wrap: anywhere;
+    }
+}
+
+
+/* Extra-small phones */
+
+@media (max-width: 400px) {
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .navbar {
+        padding: 15px 15px;
+    }
+
+    .section-heading h2,
+    .about h2 {
+        font-size: 30px;
+    }
+
+    .product-card {
+        padding: 20px;
+    }
+
+    .contact-info-card {
+        padding: 25px 18px;
+    }
+
+}
+
+
