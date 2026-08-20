@@ -72,10 +72,12 @@ const contactSection = document.getElementById("order-form");
 
 productOrderButtons.forEach(function (button) {
 
-    button.addEventListener("click", function () {
+    button.addEventListener("click", function (event) {
 
-        const selectedProduct =
-            button.getAttribute("data-product");
+    event.preventDefault();
+
+    const selectedProduct =
+        button.getAttribute("data-product");
 
         // Automatically select the product
         if (productSelect) {
