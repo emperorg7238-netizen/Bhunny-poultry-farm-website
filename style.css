@@ -1368,6 +1368,29 @@ footer {
     visibility: visible;
     pointer-events: auto;
 }
+/* FINAL BACK TO TOP */
+
+#backToTop {
+    position: fixed;
+    right: 20px;
+    bottom: 80px;
+    width: 45px;
+    height: 45px;
+    z-index: 99999;
+
+    display: none;
+
+    border: none;
+    border-radius: 50%;
+    background: #182018;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#backToTop.show {
+    display: block;
+}
 
 
 
