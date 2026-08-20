@@ -923,4 +923,21 @@ footer {
     background: #15522f;
     transform: translateY(-2px);
 }
+/* Location Card */
+
+.contact-info-card:first-child {
+    position: relative;
+}
+
+.contact-info-card:first-child .contact-info-icon {
+    font-size: 32px;
+}
+
+.contact-info-card:first-child h3 {
+    margin-bottom: 8px;
+}
+
+.contact-info-card:first-child p {
+    line-height: 1.6;
+}
 
