@@ -1038,5 +1038,40 @@ footer {
     }
 
 }
+/* ================================
+   PREMIUM PRODUCT CARDS
+================================ */
+
+.product-card {
+    overflow: hidden;
+    position: relative;
+}
+
+.product-card img {
+    transition: transform 0.4s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.04);
+}
+
+.product-card h3 {
+    margin-top: 5px;
+}
+
+.product-order {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-order:hover {
+    box-shadow: 0 8px 18px rgba(49, 92, 43, 0.2);
+}
+
+.product-availability {
+    display: inline-block;
+    background: #eef5ed;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
 
 
