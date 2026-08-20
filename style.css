@@ -940,4 +940,28 @@ footer {
 .contact-info-card:first-child p {
     line-height: 1.6;
 }
+/* Find Us Section */
+
+.find-us {
+    margin: 60px auto;
+    padding: 50px 25px;
+    max-width: 1100px;
+    background: #eef5ed;
+    border-radius: 18px;
+    text-align: center;
+}
+
+.find-us-content {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.find-us h2 {
+    margin: 10px 0 15px;
+}
+
+.find-us p:not(.eyebrow) {
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
 
