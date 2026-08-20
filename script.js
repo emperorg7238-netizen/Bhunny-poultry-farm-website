@@ -68,7 +68,7 @@ if (menuToggle && navLinks) {
 
 const productOrderButtons = document.querySelectorAll(".product-order");
 const productSelect = document.getElementById("product");
-const contactSection = document.getElementById("contact");
+const contactSection = document.getElementById("order-form");
 
 productOrderButtons.forEach(function (button) {
 
