@@ -1111,5 +1111,31 @@ footer {
 .product-card:hover {
     transform: translateY(-4px);
 }
+/* Hero Trust Points */
+
+.hero-trust {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+    margin-top: 24px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #4f604f;
+}
+
+.hero-trust span {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+@media (max-width: 600px) {
+    .hero-trust {
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 20px;
+    }
+}
+
 
 
