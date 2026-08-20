@@ -126,23 +126,35 @@ if (backToTop) {
 // BACK TO TOP BUTTON
 // ================================
 
-const backToTop = document.getElementById("backToTop");
+document.addEventListener("DOMContentLoaded", function () {
 
-window.addEventListener("scroll", function () {
+    const backToTop = document.getElementById("backToTop");
 
-    if (window.scrollY > 500) {
-        backToTop.classList.add("show");
-    } else {
-        backToTop.classList.remove("show");
+    if (!backToTop) {
+        return;
     }
 
-});
+    function checkScroll() {
 
-backToTop.addEventListener("click", function () {
+        if (window.scrollY > 300) {
+            backToTop.classList.add("show");
+        } else {
+            backToTop.classList.remove("show");
+        }
 
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
+    }
+
+    window.addEventListener("scroll", checkScroll);
+
+    backToTop.addEventListener("click", function () {
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
     });
+
+    checkScroll();
 
 });
