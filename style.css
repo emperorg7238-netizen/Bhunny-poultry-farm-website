@@ -1849,4 +1849,11 @@ footer {
     }
 
 }
+.logo img {
+    width: 55px !important;
+    height: 55px !important;
+    max-width: 55px !important;
+    object-fit: contain;
+    display: block;
+}
 
