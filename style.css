@@ -1850,10 +1850,10 @@ footer {
 
 }
 .logo img {
-    width: 55px !important;
-    height: 55px !important;
-    max-width: 55px !important;
+    width: 42px !important;
+    height: 42px !important;
+    max-width: 42px !important;
+    max-height: 42px !important;
     object-fit: contain;
     display: block;
 }
-
