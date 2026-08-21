@@ -42,6 +42,13 @@ header {
     color: #315c2b;
 }
 
+.logo img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    display: block;
+}
+
 .nav-links {
     display: flex;
     gap: 30px;
