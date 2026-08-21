@@ -1335,3 +1335,77 @@ footer {
 #backToTop.visible {
     display: block;
 }
+/* ================================
+   ABOUT SECTION
+================================ */
+
+.about {
+    padding: 90px 8%;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 60px;
+    align-items: center;
+    background: #eef3e8;
+}
+
+.about-content {
+    max-width: 650px;
+}
+
+.about-content h2 {
+    font-size: 42px;
+    line-height: 1.15;
+    margin: 12px 0 25px;
+}
+
+.about-content p {
+    margin-bottom: 18px;
+    color: #555;
+}
+
+.about-content .primary-button {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.about-stats {
+    display: grid;
+    gap: 20px;
+}
+
+.about-stats > div {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.about-stats strong {
+    display: block;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.about-stats span {
+    color: #666;
+}
+
+
+/* ================================
+   ABOUT MOBILE
+================================ */
+
+@media (max-width: 768px) {
+
+    .about {
+        grid-template-columns: 1fr;
+        padding: 70px 6%;
+        gap: 40px;
+    }
+
+    .about-content h2 {
+        font-size: 32px;
+    }
+
+}
+
