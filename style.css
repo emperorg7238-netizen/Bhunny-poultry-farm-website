@@ -1723,4 +1723,85 @@ footer {
     }
 
 }
+/* ================================
+   FOOTER
+================================ */
+
+.site-footer {
+    background: #182018;
+    color: #ffffff;
+    padding: 65px 8% 25px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-brand h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.footer-brand p {
+    color: #c7cec2;
+    max-width: 400px;
+}
+
+.footer-links,
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+    margin-bottom: 8px;
+    font-size: 17px;
+}
+
+.footer-links a,
+.footer-contact a {
+    color: #c7cec2;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 50px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #aeb6a8;
+    font-size: 14px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .site-footer {
+        padding: 55px 6% 20px;
+    }
+
+}
 
