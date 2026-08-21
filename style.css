@@ -1857,3 +1857,11 @@ footer {
     object-fit: contain;
     display: block;
 }
+.logo img {
+    width: 50px !important;
+    height: 50px !important;
+    max-width: 50px !important;
+    max-height: 50px !important;
+    object-fit: contain;
+    display: block;
+}
